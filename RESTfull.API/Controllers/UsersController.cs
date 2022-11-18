@@ -6,6 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using RESTfull.API.Models;
 using RESTfull.Domain;
 using RESTfull.Infrastructure;
+using RESTfull.Infrastructure.Repositories;
 
 namespace RESTfull.API.Controllers;
 
@@ -14,33 +15,31 @@ namespace RESTfull.API.Controllers;
 [Route("api/users")]
 public class UsersController : ControllerBase
 {
-    private readonly DataContext _context;
+    private readonly IRepository<User> _userRepository;
 
-    public UsersController(DataContext context) => _context = context;
-    
+    public UsersController(IRepository<User> userRepository) => _userRepository = userRepository;
+
     [AllowAnonymous]
     [HttpPost]
     public async Task<IActionResult> Register([FromBody] AuthModels.RegisterModel model)
     {
-        var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == model.Username);
+        var user = _userRepository.Get(u => u.Username == model.Username);
 
         if (user != null)
             return BadRequest("Username already in use");
 
-        await _context.Users.AddAsync(new User()
+        _userRepository.Add(new User()
         {
             Username = model.Username,
             Password = model.Password
         });
-
-        await _context.SaveChangesAsync();
         return Ok();
     }
-    
+
     [Authorize]
     [HttpGet("@me")]
     public async Task<IActionResult> Get()
     {
-        return Ok(_context.Users.FirstOrDefault(u => u.Username == User.Identity.Name));
+        return Ok(_userRepository.Get(u => u.Username == User.Identity.Name));
     }
 }

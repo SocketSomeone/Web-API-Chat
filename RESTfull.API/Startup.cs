@@ -3,7 +3,9 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using RESTfull.API.Helpers;
+using RESTfull.Domain;
 using RESTfull.Infrastructure;
+using RESTfull.Infrastructure.Repositories;
 
 namespace RESTfull.API;
 
@@ -60,6 +62,10 @@ public class Startup
 
         services.AddAuthentication("BasicAuthentication")
             .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+        
+        services.AddTransient<IRepository<User>, UserRepository>();
+        services.AddTransient<IRepository<Chat>, ChatRepository>();
+        services.AddTransient<IRepository<Message>, MessageRepository>();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
