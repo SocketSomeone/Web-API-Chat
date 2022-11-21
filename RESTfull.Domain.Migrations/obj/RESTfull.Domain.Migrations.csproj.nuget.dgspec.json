@@ -58,10 +58,6 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.2, )"
             }
           },
           "imports": [
@@ -127,10 +123,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.2, )"
             }
           },
           "imports": [
@@ -214,10 +206,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0-rc.2.22472.11, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.2, )"
             }
           },
           "imports": [
