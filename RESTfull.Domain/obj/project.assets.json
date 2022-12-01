@@ -1187,19 +1187,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/socketsomeone/.nuget/packages/": {}
+    "C:\\Users\\SocketSomeone\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.Domain/RESTfull.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj",
       "projectName": "RESTfull.Domain",
-      "projectPath": "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.Domain/RESTfull.Domain.csproj",
-      "packagesPath": "/Users/socketsomeone/.nuget/packages/",
-      "outputPath": "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.Domain/obj/",
+      "projectPath": "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj",
+      "packagesPath": "C:\\Users\\SocketSomeone\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/socketsomeone/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\SocketSomeone\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1245,12 +1245,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/socketsomeone/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

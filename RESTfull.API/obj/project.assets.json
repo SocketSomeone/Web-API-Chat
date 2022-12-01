@@ -3938,19 +3938,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/socketsomeone/.nuget/packages/": {}
+    "C:\\Users\\SocketSomeone\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.API/RESTfull.API.csproj",
+      "projectUniqueName": "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.API\\RESTfull.API.csproj",
       "projectName": "RESTfull.API",
-      "projectPath": "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.API/RESTfull.API.csproj",
-      "packagesPath": "/Users/socketsomeone/.nuget/packages/",
-      "outputPath": "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.API/obj/",
+      "projectPath": "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.API\\RESTfull.API.csproj",
+      "packagesPath": "C:\\Users\\SocketSomeone\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/socketsomeone/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\SocketSomeone\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -3962,14 +3962,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.Domain.Migrations/RESTfull.Domain.Migrations.csproj": {
-              "projectPath": "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.Domain.Migrations/RESTfull.Domain.Migrations.csproj"
+            "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.Domain.Migrations\\RESTfull.Domain.Migrations.csproj": {
+              "projectPath": "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.Domain.Migrations\\RESTfull.Domain.Migrations.csproj"
             },
-            "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.Domain/RESTfull.Domain.csproj": {
-              "projectPath": "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.Domain/RESTfull.Domain.csproj"
+            "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj": {
+              "projectPath": "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.Domain\\RESTfull.Domain.csproj"
             },
-            "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.Infrastructure/RESTfull.Infrastructure.csproj": {
-              "projectPath": "/Users/socketsomeone/RiderProjects/Web-API-Chat/RESTfull.Infrastructure/RESTfull.Infrastructure.csproj"
+            "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\SocketSomeone\\RiderProjects\\RESTfull\\RESTfull.Infrastructure\\RESTfull.Infrastructure.csproj"
             }
           }
         }
@@ -4024,6 +4024,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4032,7 +4050,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/socketsomeone/.dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
