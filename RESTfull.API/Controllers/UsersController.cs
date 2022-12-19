@@ -1,16 +1,11 @@
-﻿using System.Security.Claims;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using RESTfull.API.Models;
 using RESTfull.Domain;
-using RESTfull.Infrastructure;
 using RESTfull.Infrastructure.Repositories;
 
 namespace RESTfull.API.Controllers;
 
-[Authorize]
 [ApiController]
 [Route("api/users")]
 public class UsersController : ControllerBase
@@ -21,7 +16,7 @@ public class UsersController : ControllerBase
 
     [AllowAnonymous]
     [HttpPost]
-    public async Task<IActionResult> Register([FromBody] AuthModels.RegisterModel model)
+    public async Task<IActionResult> Register([FromBody] RegisterModel model)
     {
         var user = _userRepository.Get(u => u.Username == model.Username);
 

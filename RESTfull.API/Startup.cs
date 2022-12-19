@@ -25,6 +25,7 @@ public class Startup
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
         services.AddEndpointsApiExplorer();
+        services.AddCors();
 
         services.AddSwaggerGen(options =>
         {
@@ -78,7 +79,11 @@ public class Startup
         }
 
 
-        app.UseCors();
+        app.UseCors(x => x
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+        );
         app.UseRouting();
         app.UseAuthentication();
         app.UseAuthorization();
